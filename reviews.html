@@ -1,102 +1,110 @@
-<!-- reviews.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Guest Reviews | The Yellow Door Retreat</title>
-  <meta name="description" content="Read what guests say about their stays at The Yellow Door Retreat—comfort, style, and the beloved Nordic sauna."/>
-  <meta property="og:type" content="website"/><meta property="og:url" content="https://www.yourwebsite.com/reviews"/>
-  <meta property="og:title" content="Guest Reviews | The Yellow Door Retreat"/>
-  <meta property="og:description" content="Kind words from happy guests."/>
-  <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970227/the-yellow-door-retreat-36_kybj1h.jpg"/>
-  <link rel="icon" href="/favicon.ico"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css"/>
+  <meta name="description" content="Read what recent guests loved about their stay at The Yellow Door Retreat in Edmonton." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Guest Reviews | The Yellow Door Retreat" />
+  <meta property="og:description" content="Real guest feedback on comfort, design, and the Nordic sauna experience." />
+  <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970245/the-yellow-door-retreat-50_f03r1u.jpg" />
+  <meta property="og:url" content="https://example.com/reviews" />
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-<header class="site-header" id="siteHeader">
+
+<header class="header">
   <div class="container header-inner">
-    <a href="/" aria-label="Home"><img class="logo" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" loading="lazy"/></a>
+    <a href="/" aria-label="Home"><img class="logo" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt=""></a>
     <nav class="nav" aria-label="Primary">
-      <a href="/space">The Space</a><a href="/gallery">Gallery</a><a href="/reviews">Reviews</a><a href="/location">Location</a><a href="/booking" class="btn btn-primary">Book Now</a>
+      <a href="/about">The Space</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/location">Location</a>
+      <a href="/booking" class="btn">Book Now</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero hero-reviews">
-    <div class="hero-inner">
-      <h1>Guest Reviews</h1>
-      <p>Real stays. Real smiles.</p>
-    </div>
-  </section>
+<section class="section">
+  <div class="container center">
+    <h2>What Our Guests Say</h2>
+    <p class="lead">We’re proud to have hosted wonderful guests. Here’s what a few of them shared.</p>
+  </div>
 
-  <section class="section">
-    <div class="container">
-      <div class="scroll-wrap">
-        <div class="scroll-row" id="reviewsRow" aria-label="Guest reviews">
-          <article class="card card-snap" style="min-width:320px;max-width:520px">
-            <div class="stars" aria-hidden="true">★★★★★</div>
-            <p class="quote mt-4">"This was the perfect spot for a girls weekend away and the hot tub/sauna was a huge plus! The house is gorgeous and has everything you need. Beds are comfortable and the place is very clean! Would 100% stay here again."</p>
-            <p class="mt-4"><strong>- Cathi</strong></p>
-          </article>
-          <article class="card card-snap" style="min-width:320px;max-width:520px">
-            <div class="stars" aria-hidden="true">★★★★★</div>
-            <p class="quote mt-4">"Phil & Kaylee's place is an electric gem. Brand new and fully equipped and designed with thoughtfulness and comfort for the ultimate guest experience. The amenities are on point (esp the Nordic Spa)."</p>
-            <p class="mt-4"><strong>- Mike</strong></p>
-          </article>
-          <article class="card card-snap" style="min-width:320px;max-width:520px">
-            <div class="stars" aria-hidden="true">★★★★★</div>
-            <p class="quote mt-4">"Easily one of the most gorgeous places I’ve stayed. Pristine, beautifully decorated, and very cozy. Hosts are lovely and communicative."</p>
-            <p class="mt-4"><strong>- Allison</strong></p>
-          </article>
-          <article class="card card-snap" style="min-width:320px;max-width:520px">
-            <div class="stars" aria-hidden="true">★★★★★</div>
-            <p class="quote mt-4">"Great location! Everything was clean—overall an amazing experience. Highly recommend."</p>
-            <p class="mt-4"><strong>- Leah</strong></p>
-          </article>
-        </div>
-        <button class="scroll-btn scroll-left" id="revLeft" aria-label="Scroll left">←</button>
-        <button class="scroll-btn scroll-right" id="revRight" aria-label="Scroll right">→</button>
+  <div class="container scroller-wrap">
+    <button class="scroll-btn scroll-left" aria-label="Scroll left" data-for="reviews">◀</button>
+    <div id="scroller-reviews" class="scroller" aria-label="Guest reviews">
+      <div class="slide review">
+        <div class="stars">★★★★★</div>
+        <p class="mt-8"><em>"This was the perfect spot for a girls weekend away and the hot tub/sauna was a huge plus! The house is gorgeous and has everything you need. Beds are comfortable and the place is very clean! Would 100% stay here again."</em></p>
+        <p class="mb-0" style="text-align:right;font-weight:800;">— Cathi</p>
       </div>
-      <div class="text-center mt-6">
-        <a class="btn btn-primary" href="/booking">Book Your Stay</a>
+      <div class="slide review">
+        <div class="stars">★★★★★</div>
+        <p class="mt-8"><em>"Phil &amp; Kaylee's place is an electric gem. Brand new and fully equipped and designed with thoughtfulness and comfort for the ultimate guest experience. The amenities are on point (esp the Nordic Spa)."</em></p>
+        <p class="mb-0" style="text-align:right;font-weight:800;">— Mike</p>
+      </div>
+      <div class="slide review">
+        <div class="stars">★★★★★</div>
+        <p class="mt-8"><em>"House was very modern, clean and comfortable. Loved the master ensuite bathroom, especially all the plants! Felt very zen and relaxing."</em></p>
+        <p class="mb-0" style="text-align:right;font-weight:800;">— Jo-Lene</p>
+      </div>
+      <div class="slide review">
+        <div class="stars">★★★★★</div>
+        <p class="mt-8"><em>"Absolutely stunning — easily one of the most gorgeous places I have had the pleasure of staying at. The hosts are so lovely, thoughtful and communicative. The house itself is pristine, beautifully decorated, and very cozy."</em></p>
+        <p class="mb-0" style="text-align:right;font-weight:800;">— Allison</p>
+      </div>
+      <div class="slide review">
+        <div class="stars">★★★★★</div>
+        <p class="mt-8"><em>"The location was great! Everything was clean, overall an amazing experience. I would recommend everyone stay here."</em></p>
+        <p class="mb-0" style="text-align:right;font-weight:800;">— Leah</p>
       </div>
     </div>
-  </section>
-</main>
+    <button class="scroll-btn scroll-right" aria-label="Scroll right" data-for="reviews">▶</button>
+  </div>
+
+  <div class="container center mt-8">
+    <a class="btn" href="/booking">Book Your Stay</a>
+  </div>
+</section>
 
 <footer class="footer">
-  <div class="container py-16">
-    <div class="footer-grid">
-      <div>
-        <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" style="height:64px"/>
-        <p class="mt-4" style="color:#6b7280">Guests love the comfort—and the sauna.</p>
-      </div>
-      <nav>
-        <h3 class="mb-4">Navigate</h3>
-        <div style="display:flex;flex-direction:column;gap:8px">
-          <a href="/">Home</a><a href="/space">The Space</a><a href="/gallery">Gallery</a><a href="/location">Explore Edmonton</a><a href="/booking">Book Your Stay</a>
-        </div>
-      </nav>
-      <div>
-        <h3 class="mb-4">Ready to Book?</h3>
-        <a class="btn btn-primary" href="/booking">Check Availability</a>
-      </div>
+  <div class="container footer-top">
+    <div>
+      <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="" style="height:64px;">
+      <p class="mt-8">Thoughtful design, warm hosting, and a serene sauna experience.</p>
     </div>
-    <div class="mt-10" style="border-top:1px solid #e5e7eb;padding-top:24px"><small>&copy; 2025 The Yellow Door Retreat.</small></div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="/about">The Space</a></p>
+      <p><a href="/gallery">Gallery</a></p>
+      <p><a href="/location">Explore Edmonton</a></p>
+      <p><a href="/booking">Book Your Stay</a></p>
+    </div>
+    <div>
+      <h3>Ready to Book?</h3>
+      <p>Direct booking — best rate.</p>
+      <p class="mt-8"><a class="btn" href="/booking">Check Availability</a></p>
+    </div>
   </div>
+  <div class="footer-bottom">© 2025 The Yellow Door Retreat.</div>
 </footer>
 
 <script>
-  (function(){const h=document.getElementById('siteHeader');if(!h)return;window.addEventListener('scroll',()=>{h.classList.toggle('header-compact',window.scrollY>30);});})();
-  (function(){
-    const row=document.getElementById('reviewsRow'), L=document.getElementById('revLeft'), R=document.getElementById('revRight');
-    if(!row||!L||!R)return;
-    function amt(){const first=row.querySelector('.card');return first?Math.min(first.clientWidth*0.9,420):360;}
-    L.addEventListener('click',()=>row.scrollBy({left:-amt(),behavior:'smooth'}));
-    R.addEventListener('click',()=>row.scrollBy({left: amt(),behavior:'smooth'}));
+  (function () {
+    const scroller = document.getElementById('scroller-reviews');
+    const left = document.querySelector('.scroll-left[data-for="reviews"]');
+    const right = document.querySelector('.scroll-right[data-for="reviews"]');
+    if (!scroller || !left || !right) return;
+    const amt = () => (scroller.querySelector('.slide')?.getBoundingClientRect().width || 320) * 0.95;
+    left.addEventListener('click', () => scroller.scrollBy({ left: -amt(), behavior: 'smooth' }));
+    right.addEventListener('click', () => scroller.scrollBy({ left: amt(), behavior: 'smooth' }));
   })();
 </script>
+
 </body>
 </html>
