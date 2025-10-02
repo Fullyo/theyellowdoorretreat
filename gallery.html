@@ -1,0 +1,119 @@
+<!-- gallery.html (Inside & Outside galleries with vanilla-JS scrollers) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Gallery | The Yellow Door Retreat</title>
+  <meta name="description" content="Browse interior and outdoor photos of The Yellow Door Retreat—from cozy living spaces to the private Nordic sauna."/>
+  <meta property="og:type" content="website"/><meta property="og:url" content="https://www.yourwebsite.com/gallery"/>
+  <meta property="og:title" content="Gallery | The Yellow Door Retreat"/>
+  <meta property="og:description" content="A visual tour of bright interiors and the backyard wellness oasis."/>
+  <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970280/the-yellow-door-retreat-77_sh7ps7.jpg"/>
+  <link rel="icon" href="/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="/" aria-label="Home"><img class="logo" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" loading="lazy"/></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/space">The Space</a><a href="/gallery">Gallery</a><a href="/reviews">Reviews</a><a href="/location">Location</a><a href="/booking" class="btn btn-primary">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-gallery">
+    <div class="hero-inner">
+      <h1>Gallery</h1>
+      <p>A glimpse inside and out.</p>
+    </div>
+  </section>
+
+  <!-- Inside -->
+  <section class="section">
+    <div class="container">
+      <h2 class="mb-2">Interior</h2>
+      <p class="mb-6" style="color:#6b7280">Bright, modern, and comfortable spaces designed for connection.</p>
+      <div class="scroll-wrap">
+        <div class="scroll-row" id="insideRow" aria-label="Inside photos">
+          <!-- cards -->
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970206/the-yellow-door-retreat-24_ew4sq0.jpg" alt="Living room"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970221/the-yellow-door-retreat-30_jcgz3d.jpg" alt="Living room detail"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970280/the-yellow-door-retreat-77_sh7ps7.jpg" alt="Kitchen island"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970336/the-yellow-door-retreat-116_jw6zpt.jpg" alt="Kitchen detail"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970286/the-yellow-door-retreat-81_ag5sfy.jpg" alt="Dining table"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970329/the-yellow-door-retreat-112_fxo4v3.jpg" alt="Record player detail"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970350/the-yellow-door-retreat-126_hm0lye.jpg" alt="Living area detail"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970227/the-yellow-door-retreat-36_kybj1h.jpg" alt="Primary bedroom"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970245/the-yellow-door-retreat-50_f03r1u.jpg" alt="Bedroom with ensuite view"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970252/the-yellow-door-retreat-55_htekmh.jpg" alt="Ensuite bathroom"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970302/the-yellow-door-retreat-91_zuziee.jpg" alt="Second bedroom with desk"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970311/the-yellow-door-retreat-98_cw0bqi.jpg" alt="Ensuite with tub"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970312/the-yellow-door-retreat-99_aoewmb.jpg" alt="Third bedroom"/></div>
+        </div>
+        <button class="scroll-btn scroll-left" id="insideLeft" aria-label="Scroll left">←</button>
+        <button class="scroll-btn scroll-right" id="insideRight" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outside / Sauna -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="mb-2">Outdoor & Sauna</h2>
+      <p class="mb-6" style="color:#6b7280">Your private wellness oasis.</p>
+      <div class="scroll-wrap">
+        <div class="scroll-row" id="outsideRow" aria-label="Outdoor photos">
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970410/the-yellow-door-retreat-164_ppcf2p.jpg" alt="Sauna at dusk"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970406/the-yellow-door-retreat-162_q3kmew.jpg" alt="Sauna interior bench"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970402/the-yellow-door-retreat-159_px5k4y.jpg" alt="Sauna interior detail"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970199/the-yellow-door-retreat-19_tv5p2s.jpg" alt="Backyard seating area"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970193/the-yellow-door-retreat-14_vpztrj.jpg" alt="Outdoor dining table"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970187/the-yellow-door-retreat-9_ld6i2l.jpg" alt="Backyard BBQ area"/></div>
+          <div class="card card-snap"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970191/the-yellow-door-retreat-12_xon2ye.jpg" alt="Backyard fire pit area"/></div>
+        </div>
+        <button class="scroll-btn scroll-left" id="outsideLeft" aria-label="Scroll left">←</button>
+        <button class="scroll-btn scroll-right" id="outsideRight" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container py-16">
+    <div class="footer-grid">
+      <div>
+        <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" style="height:64px"/>
+        <p class="mt-4" style="color:#6b7280">A bright, modern stay—inside and out.</p>
+      </div>
+      <nav>
+        <h3 class="mb-4">Navigate</h3>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <a href="/">Home</a><a href="/space">The Space</a><a href="/reviews">Guest Reviews</a><a href="/location">Explore Edmonton</a><a href="/booking">Book Your Stay</a>
+        </div>
+      </nav>
+      <div>
+        <h3 class="mb-4">Ready to Book?</h3>
+        <a class="btn btn-primary" href="/booking">Check Availability</a>
+      </div>
+    </div>
+    <div class="mt-10" style="border-top:1px solid #e5e7eb;padding-top:24px"><small>&copy; 2025 The Yellow Door Retreat.</small></div>
+  </div>
+</footer>
+
+<script>
+  (function(){const h=document.getElementById('siteHeader');if(!h)return;window.addEventListener('scroll',()=>{h.classList.toggle('header-compact',window.scrollY>30);});})();
+  function setupScroller(rowId,leftId,rightId){
+    const row=document.getElementById(rowId),L=document.getElementById(leftId),R=document.getElementById(rightId);
+    if(!row||!L||!R)return;
+    function amount(){const first=row.querySelector('.card');return first?Math.min(first.clientWidth*0.9,360):320;}
+    L.addEventListener('click',()=>row.scrollBy({left:-amount(),behavior:'smooth'}));
+    R.addEventListener('click',()=>row.scrollBy({left: amount(),behavior:'smooth'}));
+  }
+  setupScroller('insideRow','insideLeft','insideRight');
+  setupScroller('outsideRow','outsideLeft','outsideRight');
+</script>
+</body>
+</html>
