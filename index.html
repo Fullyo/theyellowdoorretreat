@@ -1,94 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Yellow Door Retreat | Luxury Vacation Rental in Edmonton, AB</title>
-  <meta name="description" content="Modern 3-bedroom, 3.5-bath Edmonton vacation rental with private Nordic sauna, chef’s kitchen, and thoughtful design. Book direct for the best rates." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="The Yellow Door Retreat | Edmonton, AB" />
-  <meta property="og:description" content="A design-forward 3BR retreat with a private Nordic sauna in the heart of Edmonton." />
-  <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg" />
-  <meta property="og:url" content="https://example.com/" />
-  <link rel="icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Yellow Door Retreat | Edmonton, AB</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Book your stay at The Yellow Door Retreat, a luxury 3-bedroom, 3.5-bath vacation rental in Edmonton, AB. Features a private Nordic sauna, chef's kitchen, and more.">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/">
+  <meta property="og:title" content="The Yellow Door Retreat | Edmonton, AB">
+  <meta property="og:description" content="A luxury 3-bedroom, 3.5-bath vacation rental in Edmonton with a private Nordic sauna.">
+  <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.yourwebsite.com/">
+  <meta name="twitter:title" content="The Yellow Door Retreat | Edmonton, AB">
+  <meta name="twitter:description" content="A luxury 3-bedroom, 3.5-bath vacation rental in Edmonton with a private Nordic sauna.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg">
+
+  <!-- Fonts (optional to keep) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Central Styles -->
+  <link rel="stylesheet" href="/style.css"/>
 </head>
-<body>
+<body class="body">
 
-<header class="header">
-  <div class="container header-inner">
-    <a href="/" aria-label="Home">
-      <img class="logo" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo">
-    </a>
-    <nav class="nav" aria-label="Primary">
-      <a href="/about">The Space</a>
-      <a href="/gallery">Gallery</a>
-      <a href="/reviews">Reviews</a>
-      <a href="/location">Location</a>
-      <a href="/booking" class="btn">Book Now</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero" style="background-image:url('https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg'); background-size:cover; background-position:center;">
-  <div class="hero-inner container">
-    <h1>Welcome to The Yellow Door Retreat</h1>
-    <p>Discover a 3-bedroom, 3.5-bath luxury escape in Edmonton — complete with a private Nordic sauna.</p>
-    <a class="btn" href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1" target="_blank" rel="noopener">Check Availability</a>
-  </div>
-</section>
-
-<section class="features section">
-  <div class="container features-grid">
-    <div class="features-item">🧖‍♂️ <span>Private Nordic Sauna</span></div>
-    <div class="features-item">🛁 <span>3 Ensuite Bathrooms</span></div>
-    <div class="features-item">🍳 <span>Chef’s Kitchen</span></div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container grid-2">
-    <div>
-      <h2>Escape the Ordinary</h2>
-      <p class="lead">Welcome to The Yellow Door Retreat, where modern luxury meets tranquil comfort — a haven for families, groups, and wellness seekers.</p>
-      <p>Each of the three spacious bedrooms includes its own private ensuite, offering both comfort and privacy. Whether it’s a romantic getaway or a family adventure, this is where memories are made.</p>
-      <p><a class="btn" href="/about">Explore the Space</a></p>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo-link" aria-label="Home">
+        <img id="header-logo" class="logo" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about" class="nav-link">The Space</a>
+        <a href="#gallery-inside" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#location" class="nav-link">Location</a>
+      </nav>
+      <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+         href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1">
+        Book Now
+      </a>
     </div>
-    <div>
-      <img class="img-cover" loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat in Edmonton">
-    </div>
-  </div>
-</section>
+  </header>
 
-<footer class="footer">
-  <div class="container footer-top">
-    <div>
-      <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat logo" style="height:64px;">
-      <p class="mt-8">Your modern, tranquil Edmonton getaway in the Idylwylde neighborhood — crafted for families, groups, and wellness-minded guests.</p>
-      <p class="mt-8">
-        <a href="https://www.instagram.com/the.yellowdoorretreat/" target="_blank" rel="noopener">Instagram</a> •
-        <a href="https://www.facebook.com/profile.php?id=61560780081337" target="_blank" rel="noopener">Facebook</a>
-      </p>
+  <!-- Hero -->
+  <section class="hero" role="region" aria-label="Welcome">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to The Yellow Door Retreat</h1>
+      <p class="hero-subtitle">Discover a 3-bedroom, 3.5-bath luxury escape in the heart of Edmonton, complete with a private Nordic Sauna.</p>
+      <a class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer"
+         href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1">
+        Check Availability
+      </a>
     </div>
-    <div>
-      <h3>Quick Links</h3>
-      <p><a href="/about">The Space</a></p>
-      <p><a href="/gallery">Gallery</a></p>
-      <p><a href="/reviews">Guest Reviews</a></p>
-      <p><a href="/location">Explore Edmonton</a></p>
-      <p><a href="/booking">Book Your Stay</a></p>
-    </div>
-    <div>
-      <h3>Ready to Book?</h3>
-      <p>Book directly with us for the best available rates.</p>
-      <p class="mt-8"><a class="btn" href="/booking">Check Availability</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © 2025 The Yellow Door Retreat. All Rights Reserved.
-  </div>
-</footer>
+  </section>
 
+  <!-- Feature Bar -->
+  <section class="featurebar" role="region" aria-label="Highlights">
+    <div class="container feature-grid">
+      <div class="feature-item">
+        <span class="feature-icon" aria-hidden="true">🧖‍♀️</span>
+        <span class="feature-text">Private Nordic Sauna</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon" aria-hidden="true">🛁</span>
+        <span class="feature-text">3 Ensuite Bathrooms</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon" aria-hidden="true">👨‍🍳</span>
+        <span class="feature-text">Chef's Kitchen</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container main-space">
+
+    <!-- About -->
+    <section id="about" class="section grid-2" aria-labelledby="about-title">
+      <div>
+        <h2 id="about-title" class="h2">Escape the Ordinary</h2>
+        <p class="muted">
+          Welcome to The Yellow Door Retreat, where modern luxury meets tranquil comfort. This beautifully designed home is a haven for families, groups, and wellness seekers looking for an unforgettable Edmonton experience.
+        </p>
+        <p class="muted">
+          With three spacious bedrooms, each boasting its own private ensuite bathroom, your group will have all the privacy and comfort it needs. Whether it’s a romantic getaway or a family adventure, our property offers a place where memories are made.
+        </p>
+      </div>
+      <div class="card-media">
+        <img loading="lazy" class="img-cover"
+             src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg"
+             alt="Front exterior of The Yellow Door Retreat"/>
+      </div>
+    </section>
+
+    <!-- Inside Gallery -->
+    <section id="gallery-inside" class="section" aria-labelledby="inside-title">
+      <div class="center">
+        <h2 id="inside-title" class="h2">A Glimpse Inside</h2>
+        <p class="muted maxw-640">Explore the bright, modern, and comfortable spaces designed for connection and relaxation.</p>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel-btn left" id="scroll-left-inside" aria-label="Scroll gallery left">‹</button>
+        <div class="carousel-rail custom-scrollbar" id="gallery-container-inside">
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970206/the-yellow-door-retreat-24_ew4sq0.jpg" alt="Living room with cozy seating"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970221/the-yellow-door-retreat-30_jcgz3d.jpg" alt="Living room detail and decor"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970280/the-yellow-door-retreat-77_sh7ps7.jpg" alt="Kitchen island and appliances"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970336/the-yellow-door-retreat-116_jw6zpt.jpg" alt="Kitchen details"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970286/the-yellow-door-retreat-81_ag5sfy.jpg" alt="Dining table setup"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970329/the-yellow-door-retreat-112_fxo4v3.jpg" alt="Record player and music nook"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970350/the-yellow-door-retreat-126_hm0lye.jpg" alt="Living area detail"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970227/the-yellow-door-retreat-36_kybj1h.jpg" alt="Primary bedroom"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970245/the-yellow-door-retreat-50_f03r1u.jpg" alt="Bedroom with ensuite view"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970252/the-yellow-door-retreat-55_htekmh.jpg" alt="Ensuite bathroom with tile"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970302/the-yellow-door-retreat-91_zuziee.jpg" alt="Second bedroom with desk"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970311/the-yellow-door-retreat-98_cw0bqi.jpg" alt="Ensuite bathroom with tub"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970312/the-yellow-door-retreat-99_aoewmb.jpg" alt="Third bedroom"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970374/the-yellow-door-retreat-141_wqk8xu.jpg" alt="Staircase detail"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970243/the-yellow-door-retreat-49_vsiwx0.jpg" alt="Bathroom detail close-up"/></div>
+        </div>
+        <button class="carousel-btn right" id="scroll-right-inside" aria-label="Scroll gallery right">›</button>
+      </div>
+
+      <p class="hint-mobile">Swipe to see more photos</p>
+    </section>
+
+    <!-- Outside/Sauna Gallery -->
+    <section id="gallery-outside" class="section" aria-labelledby="outside-title">
+      <div class="center">
+        <h2 id="outside-title" class="h2">Your Private Wellness Oasis</h2>
+        <p class="muted maxw-640">Unwind and rejuvenate in your own Nordic sauna, the centerpiece of a tranquil backyard designed for ultimate relaxation.</p>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel-btn left" id="scroll-left-outside" aria-label="Scroll sauna gallery left">‹</button>
+        <div class="carousel-rail custom-scrollbar" id="gallery-container-outside">
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970410/the-yellow-door-retreat-164_ppcf2p.jpg" alt="Sauna glowing at dusk"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970406/the-yellow-door-retreat-162_q3kmew.jpg" alt="Nordic sauna interior benches"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970402/the-yellow-door-retreat-159_px5k4y.jpg" alt="Sauna interior detail close-up"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970199/the-yellow-door-retreat-19_tv5p2s.jpg" alt="Backyard seating area"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970193/the-yellow-door-retreat-14_vpztrj.jpg" alt="Outdoor dining table setup"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970187/the-yellow-door-retreat-9_ld6i2l.jpg" alt="Backyard BBQ area"/></div>
+          <div class="card-img"><img loading="lazy" class="img-cover" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970191/the-yellow-door-retreat-12_xon2ye.jpg" alt="Backyard fire pit area"/></div>
+        </div>
+        <button class="carousel-btn right" id="scroll-right-outside" aria-label="Scroll sauna gallery right">›</button>
+      </div>
+
+      <p class="hint-mobile">Swipe to see more photos</p>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="section grid-2" aria-labelledby="location-title">
+      <div class="card-media h-384">
+        <img loading="lazy" class="img-cover"
+             src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757278000/At-The-Lookout-Photo-copy-EDIT-_wosc7x.avif"
+             alt="Aerial view of Edmonton river valley in the fall"/>
+      </div>
+      <div>
+        <h2 id="location-title" class="h2">In the Heart of Edmonton</h2>
+        <p class="muted">
+          Nestled in the quiet, residential Idylwylde neighborhood, you're just minutes away from some of Edmonton's best attractions and amenities.
+        </p>
+        <div class="stack-16">
+          <div>
+            <p class="strong">Whyte Avenue (5 mins)</p>
+            <p class="muted">Explore trendy shops, cafes, and vibrant nightlife.</p>
+          </div>
+          <div>
+            <p class="strong">Rogers Place &amp; Downtown (10 mins)</p>
+            <p class="muted">Catch an Oilers game, a concert, or explore the city center.</p>
+          </div>
+          <div>
+            <p class="strong">Royal Alberta Museum</p>
+            <p class="muted">Immerse yourself in Alberta's history and natural heritage.</p>
+          </div>
+          <div>
+            <p class="strong">West Edmonton Mall (25 mins)</p>
+            <p class="muted">Discover North America's largest shopping and entertainment complex.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section" aria-labelledby="reviews-title">
+      <div class="center">
+        <h2 id="reviews-title" class="h2">What Our Guests Say</h2>
+        <p class="muted maxw-640">We're proud to have hosted wonderful guests. Here's what a few of them had to say.</p>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel-btn left" id="scroll-left-reviews" aria-label="Scroll reviews left">‹</button>
+        <div class="carousel-rail custom-scrollbar wide-cards" id="gallery-container-reviews">
+          <article class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"This was the perfect spot for a girls weekend away and the hot tub/sauna was a huge plus! The house is gorgeous and has everything you need. Beds are comfortable and the place is very clean! Would 100% stay here again."</p>
+            <p class="reviewer">— Cathi</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Phil &amp; Kaylee's place is an electric gem. Brand new and fully equipped and designed with thoughtfulness and comfort for the ultimate guest experience. The amenities are on point (esp the Nordic Spa)."</p>
+            <p class="reviewer">— Mike</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"House was very modern, clean and comfortable. Loved the master ensuite bathroom, especially all the plants! Felt very zen and relaxing."</p>
+            <p class="reviewer">— Jo-Lene</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Absolutely stunning — easily one of the most gorgeous places I have had the pleasure of staying at. The hosts are so lovely, thoughtful and communicative. The house itself is pristine, beautifully decorated, and very cozy."</p>
+            <p class="reviewer">— Allison</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"The location was great! Everything was clean, overall an amazing experience. I would recommend everyone stay here."</p>
+            <p class="reviewer">— Leah</p>
+          </article>
+        </div>
+        <button class="carousel-btn right" id="scroll-right-reviews" aria-label="Scroll reviews right">›</button>
+      </div>
+    </section>
+
+    <!-- Booking / Hosts -->
+    <section id="booking" class="section card booking" aria-labelledby="booking-title">
+      <div class="grid-2">
+        <div>
+          <h2 id="booking-title" class="h2">Meet Your Hosts</h2>
+          <div class="host">
+            <img loading="lazy" class="host-avatar"
+                 src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756974671/Screenshot_2025-09-04_1.30.55_AM_ghl5vu.png"
+                 alt="Hosts Phil and Kaylee"/>
+            <div class="muted">
+              <p>Hi! We are Phil and Kaylee, a dynamic husband and wife duo with a shared passion for adventure and making the most of life.</p>
+              <p>As passionate local hosts, we're committed to making your stay exceptional and sharing the beauty of our home with you.</p>
+              <p class="strong">Phil &amp; Kaylee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <h3 class="h3">Your Getaway is Waiting</h3>
+          <p class="muted maxw-480">Book directly for the best rates or get in touch with any questions.</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer"
+               href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1">
+               Book Directly Now
+            </a>
+            <a class="btn btn-secondary btn-lg" href="mailto:hello@theyellowdoorretreat.com">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img loading="lazy" class="logo-small"
+             src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png"
+             alt="The Yellow Door Retreat logo small"/>
+        <p class="muted">Your modern, tranquil Edmonton getaway. We've crafted a luxurious space in the heart of the Idylwylde neighborhood for families, groups, and wellness seekers.</p>
+        <div class="social">
+          <a class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram" href="https://www.instagram.com/the.yellowdoorretreat/">Instagram</a>
+          <a class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61560780081337">Facebook</a>
+        </div>
+      </div>
+
+      <nav aria-label="Footer" class="footer-nav">
+        <h3 class="h4">Quick Links</h3>
+        <a href="#about" class="footer-link">The Space</a>
+        <a href="#gallery-inside" class="footer-link">Gallery</a>
+        <a href="#reviews" class="footer-link">Guest Reviews</a>
+        <a href="#location" class="footer-link">Explore Edmonton</a>
+        <a href="#booking" class="footer-link">Book Your Stay</a>
+      </nav>
+
+      <div>
+        <h3 class="h4">Ready to Book?</h3>
+        <p class="muted">Book directly with us for the best available rates.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+           href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1">
+          Check Availability
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2025 The Yellow Door Retreat. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vanilla JS (no frameworks) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.getElementById('site-header');
+      const logo = document.getElementById('header-logo');
+
+      // Shrink header on scroll
+      function onScroll() {
+        if (window.scrollY > 30) {
+          header.classList.add('compact');
+          logo.classList.add('logo-small-active');
+        } else {
+          header.classList.remove('compact');
+          logo.classList.remove('logo-small-active');
+        }
+      }
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+
+      // Simple horizontal carousel helper
+      function setupCarousel(railId, leftBtnId, rightBtnId) {
+        const rail = document.getElementById(railId);
+        const left = document.getElementById(leftBtnId);
+        const right = document.getElementById(rightBtnId);
+        if (!rail || !left || !right) return;
+
+        function cardWidth() {
+          const first = rail.querySelector('.card-img');
+          return first ? first.getBoundingClientRect().width : 320;
+        }
+        left.addEventListener('click', () => {
+          rail.scrollBy({ left: -cardWidth() * 0.9, behavior: 'smooth' });
+        });
+        right.addEventListener('click', () => {
+          rail.scrollBy({ left: cardWidth() * 0.9, behavior: 'smooth' });
+        });
+      }
+
+      setupCarousel('gallery-container-inside', 'scroll-left-inside', 'scroll-right-inside');
+      setupCarousel('gallery-container-outside', 'scroll-left-outside', 'scroll-right-outside');
+      setupCarousel('gallery-container-reviews', 'scroll-left-reviews', 'scroll-right-reviews');
+    });
+  </script>
 </body>
 </html>
