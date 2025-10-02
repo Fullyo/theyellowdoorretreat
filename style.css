@@ -1,0 +1,113 @@
+/* ============ Base / Theme ============ */
+:root{
+  --brand-yellow:#facc15;
+  --brand-yellow-600:#eab308;
+  --brand-dark:#1f2937;
+  --brand-light:#f9fafb;
+  --gray-50:#fafafa;
+  --gray-100:#f3f4f6;
+  --gray-200:#e5e7eb;
+  --gray-400:#9ca3af;
+  --gray-600:#4b5563;
+  --radius:14px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 6px 18px rgba(0,0,0,.12);
+  --shadow-lg:0 20px 40px rgba(0,0,0,.18);
+  --container:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color:var(--brand-dark);
+  background:var(--brand-light);
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%; height:auto; display:block}
+a{color:inherit; text-decoration:none}
+.container{max-width:var(--container); margin:0 auto; padding:0 24px}
+
+/* ============ Header ============ */
+.site-header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid var(--gray-200);
+}
+.site-header .row{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.logo{display:flex; align-items:center; gap:12px}
+.logo img{height:64px; width:auto; transition:height .2s ease}
+.nav{display:flex; gap:22px; align-items:center}
+.nav a{color:#6b7280; font-weight:600}
+.nav a:hover{color:var(--brand-yellow)}
+.btn{
+  display:inline-block; font-weight:800; padding:12px 22px; border-radius:10px;
+  background:var(--brand-yellow); color:var(--brand-dark); box-shadow:var(--shadow-md);
+}
+.btn:hover{background:var(--brand-yellow-600)}
+
+/* ============ Hero ============ */
+.hero{
+  position:relative; min-height:72vh; display:grid; place-items:center; color:#fff; text-align:center;
+}
+.hero::after{
+  content:""; position:absolute; inset:0; background:rgba(0,0,0,.45);
+}
+.hero > .inner{position:relative; z-index:1; padding:0 16px}
+.hero h1{font-size: clamp(32px, 6vw, 60px); line-height:1.08; margin:0 0 12px; text-shadow:2px 2px 4px rgba(0,0,0,.5)}
+.hero p{font-size: clamp(16px, 2.5vw, 22px); margin:0 0 26px; text-shadow:1px 1px 2px rgba(0,0,0,.6)}
+
+/* ============ Sections / Grids ============ */
+.section{padding:64px 0}
+.grid-2{display:grid; gap:32px}
+@media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+.card{
+  background:#fff; border-radius:var(--radius); box-shadow:var(--shadow-lg); padding:28px;
+}
+
+/* ============ Feature bar ============ */
+.features{background:#fff; border-top:1px solid var(--gray-200); border-bottom:1px solid var(--gray-200)}
+.features .items{display:grid; gap:22px}
+@media(min-width:900px){.features .items{grid-template-columns:repeat(3,1fr)}}
+.feature{display:flex; gap:16px; align-items:center; justify-content:center; font-weight:700}
+.feature .icon{width:40px; height:40px; color:var(--brand-yellow)}
+
+/* ============ Typography helpers ============ */
+.h2{font-size: clamp(28px, 4vw, 40px); margin:0 0 10px}
+.lead{color:#6b7280; line-height:1.7}
+
+/* ============ Footer ============ */
+.site-footer{background:#fff; border-top:1px solid var(--gray-200)}
+.site-footer .row{display:grid; gap:28px; padding:42px 0}
+@media(min-width:900px){.site-footer .row{grid-template-columns:repeat(3,1fr)}}
+.footer-bottom{border-top:1px solid var(--gray-200); padding:18px 0; text-align:center; color:#6b7280; font-size:14px}
+
+/* ============ Gallery scroller ============ */
+.scroller-wrap{position:relative}
+.scroller{
+  display:flex; gap:16px; overflow-x:auto; padding-bottom:8px;
+  scroll-snap-type:x mandatory; scroll-behavior:smooth;
+}
+.scroller::-webkit-scrollbar{height:8px}
+.scroller::-webkit-scrollbar-track{background:var(--gray-200)}
+.scroller::-webkit-scrollbar-thumb{background:var(--brand-yellow); border-radius:4px}
+.snap{scroll-snap-align:center}
+.thumb{
+  flex:0 0 clamp(240px, 50vw, 360px); border-radius:12px; overflow:hidden; box-shadow:var(--shadow-md);
+}
+.pill{
+  display:inline-block; font-weight:700; background:#e5e7eb; color:#374151; padding:10px 16px; border-radius:10px;
+}
+
+/* ============ Utility ============ */
+.center{text-align:center}
+.mt-16{margin-top:16px}
+.mt-24{margin-top:24px}
+.mb-24{margin-bottom:24px}
+img[loading="lazy"]{background:linear-gradient(90deg,#eee,#f7f7f7,#eee);}
+
+/* ============ Simple header shrink on scroll (pure CSS-ish help) ============ */
+@supports (animation-timeline: scroll()){
+  .logo img{animation: shrink both linear; animation-timeline: scroll(root); animation-range: 0 200px}
+  @keyframes shrink{from{height:72px} to{height:56px}}
+}
