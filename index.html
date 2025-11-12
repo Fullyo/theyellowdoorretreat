@@ -11,14 +11,14 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:url" content="https://www.yourwebsite.com/"> <!-- TODO: Update with your real URL -->
     <meta property="og:title" content="The Yellow Door Retreat | Edmonton, AB">
     <meta property="og:description" content="A luxury 3-bedroom, 3.5-bath vacation rental in Edmonton with a private Nordic sauna.">
     <meta property="og:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg">
 
     <!-- Twitter (optional but good practice) -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.yourwebsite.com/">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/"> <!-- TODO: Update with your real URL -->
     <meta property="twitter:title" content="The Yellow Door Retreat | Edmonton, AB">
     <meta property="twitter:description" content="A luxury 3-bedroom, 3.5-bath vacation rental in Edmonton with a private Nordic sauna.">
     <meta property="twitter:image" content="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970405/the-yellow-door-retreat-161_q1qkml.jpg">
@@ -64,6 +64,14 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #eab308; /* yellow-500 */
         }
+        
+        /* Modal styles */
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        .modal-content {
+            transition: transform 0.25s ease;
+        }
     </style>
 </head>
 <body class="bg-brand-light text-brand-dark antialiased">
@@ -80,6 +88,8 @@
                     <a href="#gallery-inside" class="text-gray-600 hover:text-brand-yellow transition">Gallery</a>
                     <a href="#reviews" class="text-gray-600 hover:text-brand-yellow transition">Reviews</a>
                     <a href="#location" class="text-gray-600 hover:text-brand-yellow transition">Location</a>
+                    <!-- ADDED: Contact link in menu -->
+                    <a href="#contact" id="nav-contact-button" class="text-gray-600 hover:text-brand-yellow transition">Contact</a>
                 </nav>
                 <a href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1" target="_blank" rel="noopener noreferrer" class="bg-brand-yellow text-brand-dark font-bold py-2 px-6 rounded-lg hover:bg-yellow-400 transition shadow-lg">Book Now</a>
             </div>
@@ -90,8 +100,11 @@
     <section class="hero-bg h-screen flex items-center justify-center text-white relative">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="text-4xl md:text-7xl font-extrabold mb-4 leading-tight" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Welcome to The Yellow Door Retreat</h1>
-            <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Discover a 3-bedroom, 3.5-bath luxury escape in the heart of Edmonton, complete with a private Nordic Sauna.</p>
+            <!-- UPDATED: Added 'Welcome' and adjusted text sizes -->
+            <p class="text-xl md:text-2xl font-medium mb-2" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Welcome</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Yellow Door Retreat</h1>
+            <!-- UPDATED: Reduced subtitle size & increased margin-bottom -->
+            <p class="text-base md:text-xl mb-12 max-w-3xl mx-auto" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Discover a 3-bedroom, 3.5-bath luxury escape in the heart of Edmonton, complete with a private Nordic Sauna.</p>
             <a href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1" target="_blank" rel="noopener noreferrer" class="bg-brand-yellow text-brand-dark font-bold py-4 px-10 text-lg rounded-lg hover:bg-yellow-400 transition transform hover:scale-105 shadow-2xl">Check Availability</a>
         </div>
     </section>
@@ -101,15 +114,19 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="flex items-center justify-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><path d="M14 22v-2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2"></path><path d="m10 16-2 2-2-2"></path><path d="m3.1 11.9 1.4 1.4"></path><path d="M14.2 8.8 12.8 10.2"></path><path d="M12 2v4"></path><path d="m4.9 4.9 1.4 1.4"></path><path d="M19.1 4.9 17.7 6.3"></path><path d="M22 12h-4"></path><path d="m17.7 17.7 1.4 1.4"></path></svg>
+                    <!-- UPDATED: Check Mark Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><path d="M20 6 9 17l-5-5"/></svg>
                     <span class="font-semibold text-xl">Private Nordic Sauna</span>
                 </div>
                 <div class="flex items-center justify-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><path d="M20 19.5c.34.09.68.15 1 .15a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H3a3 3 0 0 0-3 3v11.65a3 3 0 0 0 3 3c.32 0 .66-.06 1-.15m16-3.03V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10.47a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1Z"/><path d="M2 17h20"/><path d="M12 17V8"/><path d="M8 17V8"/><path d="M16 17V8"/></svg>
-                    <span class="font-semibold text-xl">3 Ensuite Bathrooms</span>
+                    <!-- UPDATED: Check Mark Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><path d="M20 6 9 17l-5-5"/></svg>
+                    <!-- UPDATED: Text changed from "3 Ensuite Bathrooms" -->
+                    <span class="font-semibold text-xl">3 Bedrooms</span>
                 </div>
                  <div class="flex items-center justify-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                    <!-- UPDATED: Check Mark Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-brand-yellow"><path d="M20 6 9 17l-5-5"/></svg>
                     <span class="font-semibold text-xl">Chef's Kitchen</span>
                 </div>
             </div>
@@ -131,7 +148,7 @@
                 </p>
             </div>
             <div class="rounded-lg overflow-hidden shadow-2xl">
-                <img src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat" class="w-full h-full object-cover">
+                <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat" class="w-full h-full object-cover">
             </div>
         </section>
 
@@ -144,21 +161,22 @@
             <div class="relative">
                 <div id="gallery-container-inside" class="flex overflow-x-auto space-x-4 pb-4 custom-scrollbar" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
                     <!-- Updated & Curated Interior Photos -->
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970206/the-yellow-door-retreat-24_ew4sq0.jpg" alt="Living Room" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970221/the-yellow-door-retreat-30_jcgz3d.jpg" alt="Living Room Detail" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970280/the-yellow-door-retreat-77_sh7ps7.jpg" alt="Kitchen Island" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970336/the-yellow-door-retreat-116_jw6zpt.jpg" alt="Kitchen detail" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970286/the-yellow-door-retreat-81_ag5sfy.jpg" alt="Dining Table" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970329/the-yellow-door-retreat-112_fxo4v3.jpg" alt="Record Player" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970350/the-yellow-door-retreat-126_hm0lye.jpg" alt="Living area detail" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970227/the-yellow-door-retreat-36_kybj1h.jpg" alt="Primary Bedroom" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970245/the-yellow-door-retreat-50_f03r1u.jpg" alt="Bedroom with ensuite view" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970252/the-yellow-door-retreat-55_htekmh.jpg" alt="Ensuite Bathroom" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970302/the-yellow-door-retreat-91_zuziee.jpg" alt="Second Bedroom with desk" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970311/the-yellow-door-retreat-98_cw0bqi.jpg" alt="Ensuite Bathroom with tub" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970312/the-yellow-door-retreat-99_aoewmb.jpg" alt="Third bedroom" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970374/the-yellow-door-retreat-141_wqk8xu.jpg" alt="Staircase" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970243/the-yellow-door-retreat-49_vsiwx0.jpg" alt="Bathroom detail" class="w-full h-full object-cover"></div>
+                    <!-- ADDED: h-80 for consistent height -->
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970206/the-yellow-door-retreat-24_ew4sq0.jpg" alt="Living Room" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970221/the-yellow-door-retreat-30_jcgz3d.jpg" alt="Living Room Detail" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970280/the-yellow-door-retreat-77_sh7ps7.jpg" alt="Kitchen Island" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970336/the-yellow-door-retreat-116_jw6zpt.jpg" alt="Kitchen detail" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970286/the-yellow-door-retreat-81_ag5sfy.jpg" alt="Dining Table" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970329/the-yellow-door-retreat-112_fxo4v3.jpg" alt="Record Player" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970350/the-yellow-door-retreat-126_hm0lye.jpg" alt="Living area detail" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970227/the-yellow-door-retreat-36_kybj1h.jpg" alt="Primary Bedroom" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970245/the-yellow-door-retreat-50_f03r1u.jpg" alt="Bedroom with ensuite view" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970252/the-yellow-door-retreat-55_htekmh.jpg" alt="Ensuite Bathroom" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970302/the-yellow-door-retreat-91_zuziee.jpg" alt="Second Bedroom with desk" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970311/the-yellow-door-retreat-98_cw0bqi.jpg" alt="Ensuite Bathroom with tub" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970312/the-yellow-door-retreat-99_aoewmb.jpg" alt="Third bedroom" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970374/the-yellow-door-retreat-141_wqk8xu.jpg" alt="Staircase" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970243/the-yellow-door-retreat-49_vsiwx0.jpg" alt="Bathroom detail" class="w-full h-full object-cover"></div>
                 </div>
                 <button id="scroll-left-inside" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition transform hover:scale-110 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-dark"><path d="m15 18-6-6 6-6"/></svg></button>
                 <button id="scroll-right-inside" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition transform hover:scale-110 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-dark"><path d="m9 18 6-6-6-6"/></svg></button>
@@ -175,16 +193,87 @@
             <div class="relative">
                 <div id="gallery-container-outside" class="flex overflow-x-auto space-x-4 pb-4 custom-scrollbar" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
                     <!-- Updated Sauna/Exterior Photos -->
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970410/the-yellow-door-retreat-164_ppcf2p.jpg" alt="Sauna at dusk" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970406/the-yellow-door-retreat-162_q3kmew.jpg" alt="Sauna interior" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970402/the-yellow-door-retreat-159_px5k4y.jpg" alt="Sauna interior detail" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970199/the-yellow-door-retreat-19_tv5p2s.jpg" alt="Backyard seating area" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970193/the-yellow-door-retreat-14_vpztrj.jpg" alt="Outdoor dining table" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970187/the-yellow-door-retreat-9_ld6i2l.jpg" alt="Backyard BBQ area" class="w-full h-full object-cover"></div>
-                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970191/the-yellow-door-retreat-12_xon2ye.jpg" alt="Backyard fire pit area" class="w-full h-full object-cover"></div>
+                    <!-- ADDED: h-80 for consistent height -->
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970410/the-yellow-door-retreat-164_ppcf2p.jpg" alt="Sauna at dusk" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970406/the-yellow-door-retreat-162_q3kmew.jpg" alt="Sauna interior" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970402/the-yellow-door-retreat-159_px5k4y.jpg" alt="Sauna interior detail" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970199/the-yellow-door-retreat-19_tv5p2s.jpg" alt="Backyard seating area" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970193/the-yellow-door-retreat-14_vpztrj.jpg" alt="Outdoor dining table" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="httpsDetails :
+- {{'primary_search_provider_pid' | translate}}
+- {{'search_provider_name' | translate}}
+- {{'search_provider_country_code' | translate}}
+- {{'search_provider_language' | translate}}
+- {{'search_provider_favicon_url' | translate}}
+- {{'search_provider_encoding' | translate}}
+- {{'search_provider_keyword' | translate}}
+- {{'search_provider_search_url' | translate}}
+- {{'search_provider_suggest_url' | translate}}
+- {{'search_provider_instant_url' | translate}}
+- {{'search_provider_image_url' | translate}}
+- {{'search_provider_search_url_post_params' | translate}}
+- {{'search_provider_suggest_url_post_params'D' | translate}}
+- {{'search_provider_instant_url_post_params' | translate}}
+- {{'search_provider_image_url_post_params' | translate}}
+- {{'search_provider_alternate_urls' | translate}}
+- {{'search_provider_prepopulate_id' | translate}}
+- {{'search_provider_is_active' | translate}}
+- {{'search_provider_is_created_by_extension' | translate}}
+- {{'search_provider_is_default' | translate}}
+- {{'search_provider_is_omnibox_extension' | translate}}
+- {{'search_provider_new_tab_url' | translate}}
+- {{'search_provider_safe_for_autoreplace' | translate}}
+- {{'search_provider_url_locked' | translate}}
+- {{'search_provider_uses_pref' | translate}}
+- {{'search_provider_match_type' | translate}}
+- {{'search_provider_starter_pack_id' | translate}}
+- {{'search_provider_sync_guid' | translate}}
+- {{'search_provider_last_modified_date' | translate}}
+- {{'search_provider_default_search_provider_backup' | translate}}
+- {{'search_provider_dsa_on_default_search_provider_backup' | translate}}
+- {{'search_provider_search_terms_args' | translate}}
+Examples :
+- "Google (example.com)"
+- "example.com"
+- "US"
+- "en"
+- "https://example.com/favicon.ico"
+- "UTF-8"
+- "example.com"
+- "https://example.com/search?q={searchTerms}"
+- "https://example.com/suggest?q={searchTerms}"
+- "https://example.com/instant?q={searchTerms}"
+- "https://example.com/image?q={searchTerms}"
+- "search_provider_search_url_post_params"
+- "search_provider_suggest_url_post_params"
+- "search_provider_instant_url_post_params"
+- "search_provider_image_url_post_params"
+- "https-example-com-alternate-urls"
+- "1"
+- "1"
+- "1"
+- "1"
+- "1"
+- "https://example.com/newtab"
+- "1"
+- "1"
+- "1"
+- "1"
+- "1"
+- "f1282a5c-C693-4e6b-b4a3-f0119e87707c"
+- "13369403887000000"
+- "search_provider_default_search_provider_backup"
+- "search_provider_dsa_on_default_search_provider_backup"
+- "search_provider_search_terms_args"
+This is the default search provider.
+This search provider was added by an extension (ID: {{'search_provider_extension_id' | translate}}).
+This search provider was added by an extension.
+The search provider is not active in the profile.
+The search provider is active in the profile./dvdxbzv6a/image/upload/v1756970187/the-yellow-door-retreat-9_ld6i2l.jpg" alt="Backyard BBQ area" class="w-full h-full object-cover"></div>
+                    <div class="flex-shrink-0 w-4/5 sm:w-1/2 md:w-1/3 h-80 rounded-lg overflow-hidden shadow-lg" style="scroll-snap-align: center;"><img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970191/the-yellow-door-retreat-12_xon2ye.jpg" alt="Backyard fire pit area" class="w-full h-full object-cover"></div>
                 </div>
                 <button id="scroll-left-outside" class="absolute top-1/2 left-0 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition transform hover:scale-110 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-dark"><path d="m15 18-6-6 6-6"/></svg></button>
-                <button id="scroll-right-outside" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition transform hover:scale-110 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-dark"><path d="m9 18 6-6-6-6"/></svg></button>
+                <button id="scroll-right-outside" class="absolute top-1/2 right-0 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow-md transition transform hover:scale-110 mr-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-dark"><path d="m9 18 6-6-6-6"/></svg></button>
             </div>
              <p class="text-center text-sm text-gray-500 mt-4 md:hidden">Swipe to see more photos</p>
         </section>
@@ -286,7 +375,7 @@
                                 Hi! We are Phil and Kaylee, a dynamic husband and wife duo with a shared passion for adventure and making the most of life.
                             </p>
                             <p>
-                               As passionate local hosts, we're committed to making your stay exceptional and sharing the beauty of our home with you.
+                                As passionate local hosts, we're committed to making your stay exceptional and sharing the beauty of our home with you.
                             </p>
                             <p class="font-semibold text-brand-dark pt-1">
                                 Phil & Kaylee
@@ -301,11 +390,12 @@
                      <p class="text-gray-600 mb-8 max-w-md mx-auto">Book directly for the best rates or get in touch with any questions.</p>
                      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                          <a href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1" target="_blank" rel="noopener noreferrer" class="bg-brand-yellow text-brand-dark font-bold py-3 px-8 text-lg rounded-lg hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg w-full sm:w-auto">
-                            Book Directly Now
+                            <!-- UPDATED: Button Text -->
+                             Book Now
                          </a>
-                         <a href="mailto:hello@theyellowdoorretreat.com" class="bg-gray-200 text-gray-700 font-bold py-3 px-8 text-lg rounded-lg hover:bg-gray-300 transition w-full sm:w-auto">
-                            Get in Touch
-                         </a>
+                         <button id="open-modal-button" type="button" class="bg-gray-200 text-gray-700 font-bold py-3 px-8 text-lg rounded-lg hover:bg-gray-300 transition w-full sm:w-auto">
+                             Get in Touch
+                         </button>
                      </div>
                 </div>
             </div>
@@ -316,47 +406,110 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
         <div class="container mx-auto px-6 py-10">
+            <!-- UPDATED: Grid layout changed back to md:grid-cols-3 -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <!-- Logo and Info -->
                 <div class="flex flex-col items-center md:items-start">
                     <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1757044614/TheYellowDoorRetreat_jfjsjx.png" alt="The Yellow Door Retreat Logo" class="h-16 w-auto mb-4">
-                    <p class="text-gray-500 max-w-sm mb-4">Your modern, tranquil Edmonton getaway. We've crafted a luxurious space in the heart of the Idylwylde neighborhood for families, groups, and wellness seekers.</p>
+                    <!-- UPDATED: Footer text color darker -->
+                    <p class="text-brand-dark max-w-sm mb-4">Your modern, tranquil Edmonton getaway. We've crafted a luxurious space in the heart of the Idylwylde neighborhood for families, groups, and wellness seekers.</p>
                     <div class="flex space-x-4">
-                        <a href="https://www.instagram.com/the.yellowdoorretreat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-400 hover:text-brand-yellow transition">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path></svg>
+                        <!-- UPDATED: Icon color to match text -->
+                        <a href="https://www.instagram.com/the.yellowdoorretreat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-brand-dark hover:text-brand-yellow transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069 4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"></path></svg>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61560780081337" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-400 hover:text-brand-yellow transition">
+                        <!-- UPDATED: Icon color to match text -->
+                        <a href="https://www.facebook.com/profile.php?id=61560780081337" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-brand-dark hover:text-brand-yellow transition">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.351C0 23.41.59 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.59 1.323-1.325V1.325C24 .59 23.405 0 22.675 0z"></path></svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Navigation Links -->
+                <!-- UPDATED: Wrapper div removed, alignment handled by grid -->
                 <div>
                     <h3 class="font-bold text-lg text-brand-dark mb-4">Quick Links</h3>
                     <nav class="flex flex-col space-y-2">
-                        <a href="#about" class="text-gray-600 hover:text-brand-yellow transition">The Space</a>
-                        <a href="#gallery-inside" class="text-gray-600 hover:text-brand-yellow transition">Gallery</a>
-                        <a href="#reviews" class="text-gray-600 hover:text-brand-yellow transition">Guest Reviews</a>
-                        <a href="#location" class="text-gray-600 hover:text-brand-yellow transition">Explore Edmonton</a>
-                        <a href="#booking" class="text-gray-600 hover:text-brand-yellow transition">Book Your Stay</a>
+                        <!-- UPDATED: Footer text color darker -->
+                        <a href="#about" class="text-brand-dark hover:text-brand-yellow transition">The Space</a>
+                        <a href="#gallery-inside" class="text-brand-dark hover:text-brand-yellow transition">Gallery</a>
+                        <a href="#reviews" class="text-brand-dark hover:text-brand-yellow transition">Guest Reviews</a>
+                        <a href="#location" class="text-brand-dark hover:text-brand-yellow transition">Location</a>
+                        <a href="#booking" class="text-brand-dark hover:text-brand-yellow transition">Book Your Stay</a>
+                        <!-- ADDED: Contact link -->
+                        <a href="#contact" id="quick-link-contact-button" class="text-brand-dark hover:text-brand-yellow transition">Contact</a>
                     </nav>
                 </div>
                 
-                <!-- Call to Action -->
+                <!-- NEW: Third column for balance -->
                 <div>
-                    <h3 class="font-bold text-lg text-brand-dark mb-4">Ready to Book?</h3>
-                    <p class="text-gray-600 mb-4">Book directly with us for the best available rates.</p>
-                     <a href="https://theyellowdoorretreat.guestybookings.com/en/properties/68a7b5f44e89ee00110bb50f?minOccupancy=1" target="_blank" rel="noopener noreferrer" class="bg-brand-yellow text-brand-dark font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition shadow-md inline-block">
-                        Check Availability
-                     </a>
+                    <h3 class="font-bold text-lg text-brand-dark mb-4">Get in Touch</h3>
+                    <div class="flex flex-col space-y-2 text-brand-dark">
+                        <p>Have questions about your stay? We'd love to hear from you.</p>
+                        <!-- ADDED: Email address -->
+                        <a href="mailto:info@theyellowdoorretreat.ca" class="text-brand-dark hover:text-brand-yellow transition text-left font-medium">info@theyellowdoorretreat.ca</a>
+                        <!-- UPDATED: Changed to a styled button CTA -->
+                        <div class="pt-2">
+                            <button id="footer-contact-button" class="bg-brand-yellow text-brand-dark font-bold py-2 px-5 rounded-lg hover:bg-yellow-400 transition shadow-md inline-block text-center">
+                                Get in Touch
+                            </button>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="mt-10 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <!-- UPDATED: Footer text color darker -->
+            <div class="mt-10 pt-6 border-t border-gray-200 text-center text-brand-dark text-sm">
                 <p>&copy; 2025 The Yellow Door Retreat. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden opacity-0">
+        <div class="modal-content bg-white w-full max-w-md p-8 rounded-lg shadow-2xl transform scale-95">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-2xl font-bold text-brand-dark">Get in Touch</h3>
+                <button id="close-modal-button" type="button" class="text-gray-400 hover:text-gray-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+
+            <!-- Netlify Form -->
+            <!-- This form is set to redirect back to this page with a success message -->
+            <form name="contact" method="POST" action="/?message=success" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-yellow focus:border-brand-yellow">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-yellow focus:border-brand-yellow">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-yellow focus:border-brand-yellow"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-brand-yellow text-brand-dark font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition shadow-lg">Send Message</button>
+                    </div>
+                </div>
+            </form>
+            
+            <!-- Success Message -->
+            <div id="success-message" class="hidden text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-500 mx-auto mb-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <h3 class="text-2xl font-bold text-brand-dark mb-2">Thank You!</h3>
+                <p class="text-gray-600">Your message has been sent successfully. We'll get back to you soon.</p>
+            </div>
+
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -403,9 +556,84 @@
             setupGalleryScroll('gallery-container-inside', 'scroll-left-inside', 'scroll-right-inside');
             setupGalleryScroll('gallery-container-outside', 'scroll-left-outside', 'scroll-right-outside');
             setupGalleryScroll('gallery-container-reviews', 'scroll-left-reviews', 'scroll-right-reviews');
+            
+            // Modal Script
+            const modal = document.getElementById('contact-modal');
+            const modalContent = modal.querySelector('.modal-content');
+            const openButton = document.getElementById('open-modal-button');
+            const closeButton = document.getElementById('close-modal-button');
+            const form = modal.querySelector('form');
+            const successMessage = modal.querySelector('#success-message');
+            // ADDED: New variable for nav contact button
+            const navContactButton = document.getElementById('nav-contact-button');
+            // ADDED: New variable for footer contact button
+            const footerContactButton = document.getElementById('footer-contact-button');
+            // ADDED: New variable for quick link contact button
+            const quickLinkContactButton = document.getElementById('quick-link-contact-button');
+
+            const openModal = () => {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modalContent.classList.remove('scale-95');
+                }, 10);
+            };
+
+            const closeModal = () => {
+                modal.classList.add('opacity-0');
+                modalContent.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    // Reset form if it was showing success
+                    form.classList.remove('hidden');
+                    successMessage.classList.add('hidden');
+                }, 250);
+            };
+
+            openButton.addEventListener('click', openModal);
+            closeButton.addEventListener('click', closeModal);
+            // ADDED: Event listener for nav contact button
+            if (navContactButton) {
+                navContactButton.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent page jump
+                    openModal();
+                });
+            }
+
+            // ADDED: Event listener for footer contact button
+            if (footerContactButton) {
+                footerContactButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal();
+                });
+            }
+
+            // ADDED: Event listener for quick link contact button
+            if (quickLinkContactButton) {
+                quickLinkContactButton.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent page jump
+                    openModal();
+                });
+            }
+
+            // Close modal when clicking on the background overlay
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Check for success message in URL
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('message') && urlParams.get('message') === 'success') {
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+                openModal();
+                // Clean up the URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
         });
     </script>
 
 </body>
 </html>
-
