@@ -100,7 +100,7 @@
     
     <!-- Feature Bar - REMOVED --><!-- This section has been moved into the "About" section below --><!-- Main Content --><main class="container mx-auto px-6 py-16 md:py-24 space-y-24">
         
-        <!-- About Section --><!-- UPDATED: Changed items-start to items-center --><section id="about" class="scroll-mt-24 grid md:grid-cols-2 gap-12 items-center">
+        <!-- About Section --><!-- UPDATED: items-center to vertically center text --><section id="about" class="scroll-mt-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-4xl font-bold text-brand-dark mb-4">Escape the Ordinary</h2>
                 <!-- UPDATED: Added text-lg for better readability and balance --><p class="text-gray-600 mb-4 leading-relaxed text-lg">
@@ -132,8 +132,8 @@
                     </div>
                 </div>
             </div>
-            <!-- UPDATED: Added md:h-[450px] to constrain image height --><div class="rounded-lg overflow-hidden shadow-2xl md:h-[450px]">
-                <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x450/1f2937/facc15?text=Yellow+Door+Retreat';">
+            <!-- UPDATED: Removed fixed height to show full image --><div class="rounded-lg overflow-hidden shadow-2xl">
+                <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat" class="w-full h-auto object-cover" onerror="this.src='https://placehold.co/600x450/1f2937/facc15?text=Yellow+Door+Retreat';">
             </div>
         </section>
 
