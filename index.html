@@ -137,8 +137,8 @@
     <main class="container mx-auto px-6 py-16 md:py-24 space-y-24">
         
         <!-- About Section -->
-        <!-- UPDATED: Changed items-center to items-start for better alignment -->
-        <section id="about" class="scroll-mt-24 grid md:grid-cols-2 gap-12 items-start">
+        <!-- UPDATED: Changed items-start back to items-center for vertical centering -->
+        <section id="about" class="scroll-mt-24 grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-4xl font-bold text-brand-dark mb-4">Escape the Ordinary</h2>
                 <!-- UPDATED: Added text-lg for better readability and balance -->
@@ -155,7 +155,8 @@
                     From the fully-stocked chef's kitchen to the dedicated workspace with high-speed internet, every detail has been thoughtfully curated. Relax with a record, sink into the plush sofa, or step outside to your private backyard. This is more than a stay—it's an experience.
                 </p>
             </div>
-            <div class="rounded-lg overflow-hidden shadow-2xl">
+            <!-- UPDATED: Added md:h-[500px] to constrain the image height on desktop -->
+            <div class="rounded-lg overflow-hidden shadow-2xl md:h-[500px]">
                 <img loading="lazy" src="https://res.cloudinary.com/dvdxbzv6a/image/upload/v1756970389/the-yellow-door-retreat-151_l9swlc.jpg" alt="Front exterior of The Yellow Door Retreat" class="w-full h-full object-cover">
             </div>
         </section>
